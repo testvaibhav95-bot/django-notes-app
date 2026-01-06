@@ -17,7 +17,7 @@ COPY . /app/backend
 
 EXPOSE 8000
 
-CMD ["python3", "app.py"]
+CMD ["python3", "manage.py"]
 
 #RUN python manage.py migrate
 #RUN python manage.py makemigrations
