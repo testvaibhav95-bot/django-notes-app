@@ -1,3 +1,5 @@
+
+
 FROM python:3.9
 
 WORKDIR /app/backend
@@ -12,6 +14,7 @@ RUN apt-get update \
 # Install app dependencies
 RUN pip install mysqlclient
 RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install --upgrade pip
 
 COPY . /app/backend
 
